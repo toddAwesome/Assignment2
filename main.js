@@ -68,6 +68,7 @@ Background.prototype.update = function () {
 }
 
 Background.prototype.draw = function (ctx) {
+	this.Animation.drawFrame(this.game.clockTick, ctx, 0, 0, 1);
 }
 /* 
       Last man standing.  Agents must aim and shoot one another and dodge bullets  if they can.
